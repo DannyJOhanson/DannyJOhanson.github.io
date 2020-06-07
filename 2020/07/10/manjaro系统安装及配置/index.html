@@ -22,15 +22,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}}};
   </script>
 
-  <meta name="description" content="manjaro系统安装及配置|安装基础软件个人笔记manjaro是基于archlinux的一类定制系统，它的系统界面非常简洁舒适，运用pacman包管理器来安装软件非常方便简单，个人觉得是非常适合日常使用的定制linux系统之一">
+  <meta name="description" content="manjaro系统安装|安装基础软件个人笔记manjaro是基于archlinux的一类定制系统，它的系统界面非常简洁舒适，运用pacman包管理器来安装软件非常方便简单，个人觉得是非常适合日常使用的定制linux系统之一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="manjaro系统安装及配置">
 <meta property="og:url" content="http://yoursite.com/2020/07/10/manjaro%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="小明的博客">
-<meta property="og:description" content="manjaro系统安装及配置|安装基础软件个人笔记manjaro是基于archlinux的一类定制系统，它的系统界面非常简洁舒适，运用pacman包管理器来安装软件非常方便简单，个人觉得是非常适合日常使用的定制linux系统之一">
+<meta property="og:description" content="manjaro系统安装|安装基础软件个人笔记manjaro是基于archlinux的一类定制系统，它的系统界面非常简洁舒适，运用pacman包管理器来安装软件非常方便简单，个人觉得是非常适合日常使用的定制linux系统之一">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-10T01:00:00.000Z">
-<meta property="article:modified_time" content="2020-07-18T13:47:42.067Z">
+<meta property="article:modified_time" content="2020-06-07T16:34:30.820Z">
 <meta property="article:author" content="DannyJO明">
 <meta property="article:tag" content="manjaro">
 <meta property="article:tag" content="linux">
@@ -178,7 +178,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#manjaro系统安装及配置-安装基础软件个人笔记"><span class="nav-number">1.</span> <span class="nav-text">manjaro系统安装及配置|安装基础软件个人笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#manjaro系统选择"><span class="nav-number">1.1.</span> <span class="nav-text">manjaro系统选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#manjaro启动盘制作"><span class="nav-number">1.2.</span> <span class="nav-text">manjaro启动盘制作</span></a></li></ol></li></ol></div>
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#manjaro系统安装-安装基础软件个人笔记"><span class="nav-number">1.</span> <span class="nav-text">manjaro系统安装|安装基础软件个人笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#manjaro系统选择"><span class="nav-number">1.1.</span> <span class="nav-text">manjaro系统选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#manjaro启动盘制作"><span class="nav-number">1.2.</span> <span class="nav-text">manjaro启动盘制作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#manjaro启动盘安装"><span class="nav-number">1.3.</span> <span class="nav-text">manjaro启动盘安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Manjaro双系统安装"><span class="nav-number">2.</span> <span class="nav-text">Manjaro双系统安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#完成后挂载Manjaro引导"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">完成后挂载Manjaro引导*</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#找到大小为100mb左右的Windows系统引导，添加挂载点-boot-efi"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">找到大小为100mb左右的Windows系统引导，添加挂载点 ** &#x2F;boot&#x2F;efi **</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Manjaro虚拟机安装方法"><span class="nav-number">3.</span> <span class="nav-text">Manjaro虚拟机安装方法</span></a></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -192,20 +192,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -277,7 +277,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-18 21:47:42" itemprop="dateModified" datetime="2020-07-18T21:47:42+08:00">2020-07-18</time>
+                <time title="修改时间：2020-06-08 00:34:30" itemprop="dateModified" datetime="2020-06-08T00:34:30+08:00">2020-06-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -315,7 +315,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="manjaro系统安装及配置-安装基础软件个人笔记"><a href="#manjaro系统安装及配置-安装基础软件个人笔记" class="headerlink" title="manjaro系统安装及配置|安装基础软件个人笔记"></a>manjaro系统安装及配置|安装基础软件个人笔记</h1><p>manjaro是基于archlinux的一类定制系统，它的系统界面非常简洁舒适，运用pacman包管理器来安装软件非常方便简单，个人觉得是非常适合日常使用的定制linux系统之一</p>
+        <h1 id="manjaro系统安装-安装基础软件个人笔记"><a href="#manjaro系统安装-安装基础软件个人笔记" class="headerlink" title="manjaro系统安装|安装基础软件个人笔记"></a>manjaro系统安装|安装基础软件个人笔记</h1><p>manjaro是基于archlinux的一类定制系统，它的系统界面非常简洁舒适，运用pacman包管理器来安装软件非常方便简单，个人觉得是非常适合日常使用的定制linux系统之一</p>
 <a id="more"></a>
 <blockquote>
 <ul>
@@ -333,7 +333,19 @@
 </ul>
 </blockquote>
 <p>如果个人日常使用的话安装xfce，kde，gnome其中一种即可</p>
-<h2 id="manjaro启动盘制作"><a href="#manjaro启动盘制作" class="headerlink" title="manjaro启动盘制作"></a>manjaro启动盘制作</h2>
+<h2 id="manjaro启动盘制作"><a href="#manjaro启动盘制作" class="headerlink" title="manjaro启动盘制作"></a>manjaro启动盘制作</h2><p>点击上面链接下载所需的manjaro系统镜像文件，并开始制作启动盘</p>
+<p>制作启动盘需要用到写入软件，使用 ** <a href="http://rufus.ie/" target="_blank" rel="noopener">rufus</a> **写入，插入u盘，打开软件后在软件选择你的u盘然后开始写入</p>
+<blockquote>
+<p>注意如果你的硬盘已经进行系统分区，则在系统分区一栏选择自己硬盘分区格式mbr或者gpt，可以右键我的电脑<kbd>管理</kbd>-<kbd>磁盘</kbd>-<kbd>磁盘管理</kbd>查看</p>
+</blockquote>
+<p>写入完成后开始安装</p>
+<h2 id="manjaro启动盘安装"><a href="#manjaro启动盘安装" class="headerlink" title="manjaro启动盘安装"></a>manjaro启动盘安装</h2><p>首先在bios界面将u盘启动项放在首尾，然后关闭快速启动与安全启动f10保存退出，开机即可进入u盘启动界面通过引导即可完成安装。注意** 驱动(driver) **配置选择<br>|cpu|显卡|选择|<br>|:—:|:—:|:—:|<br>|intel|集显|free|<br>|amd|集显|free|<br>|amd|nvdia|no free|<br>|intel|nvdia|no free|<br>|amd|amd|free|<br>|intel|amd|free|</p>
+<h1 id="Manjaro双系统安装"><a href="#Manjaro双系统安装" class="headerlink" title="Manjaro双系统安装"></a>Manjaro双系统安装</h1><p>需要双系统需要在已有硬盘中解压出多余的硬盘空间作为空卷，也可以安装在多余的硬盘上<br>右键我的电脑<kbd>管理</kbd>-<kbd>磁盘</kbd>-<kbd>磁盘管理</kbd></p>
+<blockquote>
+<p>1.右键自己要压缩的卷，点击压缩卷<br>2.压缩所需空间即可</p>
+</blockquote>
+<p>然后操作同上，安装时需要注意安装分区设置，选择手动分区<br>|必须|文件系统|大小|挂载点|标记|用途|<br>|:-:|:-:|:-:|:-:|:-:|:-:|<br>||linuxswap|8g||swap|内存不够硬盘来凑|<br>|√|ext4|500mb|/boot|boot|存放系统启动项|<br>|√|ext4|自选大小|/|root|存放系统|<br>||ext4|自选大小|/filename|无需标记|用于储存用户数据，可以自由分盘|</p>
+<h4 id="完成后挂载Manjaro引导"><a href="#完成后挂载Manjaro引导" class="headerlink" title="完成后挂载Manjaro引导*"></a>完成后挂载Manjaro引导*</h4><h4 id="找到大小为100mb左右的Windows系统引导，添加挂载点-boot-efi"><a href="#找到大小为100mb左右的Windows系统引导，添加挂载点-boot-efi" class="headerlink" title="找到大小为100mb左右的Windows系统引导，添加挂载点 ** /boot/efi **"></a>找到大小为100mb左右的Windows系统引导，添加挂载点 ** /boot/efi **</h4><h1 id="Manjaro虚拟机安装方法"><a href="#Manjaro虚拟机安装方法" class="headerlink" title="Manjaro虚拟机安装方法"></a>Manjaro虚拟机安装方法</h1>
     </div>
 
     
