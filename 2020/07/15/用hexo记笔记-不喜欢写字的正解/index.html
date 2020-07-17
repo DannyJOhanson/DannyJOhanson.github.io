@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  
+  <link rel="stylesheet" href="/lib/animate-css/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}}};
+  </script>
+
+  <meta name="description" content="Markdown语法个人笔记markdown是一款非常轻量的文本编辑语言，上手非常快…..它优点很多，对于初学者的我来讲，markdown给了我一种奇妙的微小成就感，即使编辑文本感觉也像是在敲代码一样停不下了，让人欲罢不能，而且它够简单，非常适合用来做笔记，适用于任何行业不过在这几天体验下来，熟练的运用markdown的基础语法还是一门熟练功，这个时候就可以配合博客，有什么想说的，有什么新学到的知">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown记笔记">
+<meta property="og:url" content="http://yoursite.com/2020/07/15/%E7%94%A8hexo%E8%AE%B0%E7%AC%94%E8%AE%B0-%E4%B8%8D%E5%96%9C%E6%AC%A2%E5%86%99%E5%AD%97%E7%9A%84%E6%AD%A3%E8%A7%A3/index.html">
+<meta property="og:site_name" content="小明的博客">
+<meta property="og:description" content="Markdown语法个人笔记markdown是一款非常轻量的文本编辑语言，上手非常快…..它优点很多，对于初学者的我来讲，markdown给了我一种奇妙的微小成就感，即使编辑文本感觉也像是在敲代码一样停不下了，让人欲罢不能，而且它够简单，非常适合用来做笔记，适用于任何行业不过在这几天体验下来，熟练的运用markdown的基础语法还是一门熟练功，这个时候就可以配合博客，有什么想说的，有什么新学到的知">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://s1.ax1x.com/2020/07/18/UcusPI.jpg">
+<meta property="article:published_time" content="2020-07-15T01:07:22.000Z">
+<meta property="article:modified_time" content="2020-07-17T22:16:52.303Z">
+<meta property="article:author" content="DannyJO明">
+<meta property="article:tag" content="-markdown -笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://s1.ax1x.com/2020/07/18/UcusPI.jpg">
+
+<link rel="canonical" href="http://yoursite.com/2020/07/15/%E7%94%A8hexo%E8%AE%B0%E7%AC%94%E8%AE%B0-%E4%B8%8D%E5%96%9C%E6%AC%A2%E5%86%99%E5%AD%97%E7%9A%84%E6%AD%A3%E8%A7%A3/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>markdown记笔记 | 小明的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <main class="main">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line toggle-line-first"></span>
+        <span class="toggle-line toggle-line-middle"></span>
+        <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">小明的博客</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Markdown语法个人笔记"><span class="nav-number">1.</span> <span class="nav-text">Markdown语法个人笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文本编辑器"><span class="nav-number">1.1.</span> <span class="nav-text">文本编辑器</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#vim"><span class="nav-number">1.1.0.0.1.</span> <span class="nav-text">vim</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#typora"><span class="nav-number">1.1.0.0.2.</span> <span class="nav-text">typora</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown标题"><span class="nav-number">1.2.</span> <span class="nav-text">markdown标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number">2.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">2.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">2.1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">2.1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">2.1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown格式"><span class="nav-number">2.2.</span> <span class="nav-text">markdown格式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#markdown引用"><span class="nav-number">2.2.0.1.</span> <span class="nav-text">markdown引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#markdown粗斜体"><span class="nav-number">2.2.0.2.</span> <span class="nav-text">markdown粗斜体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#markdown删除线"><span class="nav-number">2.2.0.3.</span> <span class="nav-text">markdown删除线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#markdown下划线"><span class="nav-number">2.2.0.4.</span> <span class="nav-text">markdown下划线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#markdown脚注"><span class="nav-number">2.2.0.5.</span> <span class="nav-text">markdown脚注</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown代码块"><span class="nav-number">2.3.</span> <span class="nav-text">markdown代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown表格"><span class="nav-number">2.4.</span> <span class="nav-text">markdown表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown图片及链接插入"><span class="nav-number">2.5.</span> <span class="nav-text">markdown图片及链接插入</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#插入图片"><span class="nav-number">2.5.0.1.</span> <span class="nav-text">插入图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#插入链接"><span class="nav-number">2.5.0.2.</span> <span class="nav-text">插入链接</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#github"><span class="nav-number">2.5.0.2.1.</span> <span class="nav-text">github</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意项"><span class="nav-number">2.6.</span> <span class="nav-text">注意项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown甘特图绘制方法"><span class="nav-number">2.7.</span> <span class="nav-text">markdown甘特图绘制方法</span></a></li></ol></li></ol></div>
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">DannyJO明</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/DannyJOhanson" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;DannyJOhanson" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </section>
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </header>
+
+      
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div id="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+      <div class="main-inner">
+        
+
+        <div class="content post posts-expand">
+          
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/15/%E7%94%A8hexo%E8%AE%B0%E7%AC%94%E8%AE%B0-%E4%B8%8D%E5%96%9C%E6%AC%A2%E5%86%99%E5%AD%97%E7%9A%84%E6%AD%A3%E8%A7%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="DannyJO明">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小明的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          markdown记笔记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-15 09:07:22" itemprop="dateCreated datePublished" datetime="2020-07-15T09:07:22+08:00">2020-07-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-18 06:16:52" itemprop="dateModified" datetime="2020-07-18T06:16:52+08:00">2020-07-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">-个人博客 -markdown基础语法</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="Markdown语法个人笔记"><a href="#Markdown语法个人笔记" class="headerlink" title="Markdown语法个人笔记"></a>Markdown语法个人笔记</h1><p>markdown是一款非常轻量的文本编辑语言，上手非常快…..它优点很多，对于初学者的我来讲，markdown给了我一种奇妙的微小成就感，即使编辑文本感觉也像是在敲代码一样停不下了，让人欲罢不能，而且它够简单，非常适合用来做笔记，适用于任何行业<br>不过在这几天体验下来，熟练的运用markdown的基础语法还是一门熟练功，这个时候就可以配合博客，有什么想说的，有什么新学到的知识，记录下来，方便复习同时也增进语法熟练度</p>
+<a id="more"></a>
+<h2 id="文本编辑器"><a href="#文本编辑器" class="headerlink" title="文本编辑器"></a>文本编辑器</h2><p>在linux环境下推荐使用 <strong><a href="https://www.typora.io/" target="_blank" rel="noopener">typora</a></strong>，<strong>vim</strong> 编辑器，都是非常快捷好用的文本编辑器，windows和macos下推荐使用typora，也可以使用vscode等等</p>
+<blockquote>
+<h5 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h5><p>优点：快捷，用终端即可操作，不用来回切换<br>缺点：没有试试渲染markdown语法的功能</p>
+<h5 id="typora"><a href="#typora" class="headerlink" title="typora"></a>typora</h5><p>优点：实时渲染看着爽，语法出错可及时察觉<br>缺点：垃圾电脑图片插多了容易崩</p>
+</blockquote>
+<h2 id="markdown标题"><a href="#markdown标题" class="headerlink" title="markdown标题"></a>markdown标题</h2><p>markdown的标题语法非常简单，只需要在代码模式下输入(切记空格)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+<p>渲染结果如下</p>
+<blockquote>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></blockquote>
+<h2 id="markdown格式"><a href="#markdown格式" class="headerlink" title="markdown格式"></a>markdown格式</h2><p>在markdown下格式输入非常简单，只需要输入代码块中的代码即可在typora中看到渲染效果</p>
+<h4 id="markdown引用"><a href="#markdown引用" class="headerlink" title="markdown引用"></a>markdown引用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 引用1</span><br><span class="line">&gt;&gt; 引用2</span><br><span class="line">&gt;&gt;&gt; 引用3等等</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>引用1</p>
+<blockquote>
+<p>引用2</p>
+<blockquote>
+<p>引用3等等  </p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h4 id="markdown粗斜体"><a href="#markdown粗斜体" class="headerlink" title="markdown粗斜体"></a>markdown粗斜体</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*斜体*</span><br><span class="line">**粗体**</span><br><span class="line">***粗斜体***</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><em>斜体</em><br><strong>粗体</strong><br><strong><em>粗斜体</em></strong></p>
+</blockquote>
+<h4 id="markdown删除线"><a href="#markdown删除线" class="headerlink" title="markdown删除线"></a>markdown删除线</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~我爱学习~~</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><del>我爱学习</del></p>
+</blockquote>
+<h4 id="markdown下划线"><a href="#markdown下划线" class="headerlink" title="markdown下划线"></a>markdown下划线</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt;我爱编程&lt;&#x2F;u&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><u>我爱编程</u></p>
+</blockquote>
+<h4 id="markdown脚注"><a href="#markdown脚注" class="headerlink" title="markdown脚注"></a>markdown脚注</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">我爱blender[^c4d]</span><br><span class="line">[^c4d]:相爱相杀</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>我爱blender<a href="相爱相杀">^c4d</a></p>
+</blockquote>
+<h2 id="markdown代码块"><a href="#markdown代码块" class="headerlink" title="markdown代码块"></a>markdown代码块</h2><p>按四下空格或者制表符即可，随即输入代码，结束时换行即可<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#包裹你的代码</span><br></pre></td></tr></table></figure><br>也可以使用```开头和结尾，在开头输入 ==```== + ==代码语言== 即可给包裹的代码指向一种类型，代码则会开启高亮展示</p>
+<pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">'RUNOOB'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></code></pre><p>输出结果为</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">'RUNOOB'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="markdown表格"><a href="#markdown表格" class="headerlink" title="markdown表格"></a>markdown表格</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|title1|title2|</span><br><span class="line">|------|------|</span><br><span class="line">|content|content|</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>title1</th>
+<th>title2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>content</td>
+<td>content</td>
+</tr>
+<tr>
+<td>在markdown中的表格可以利用 ** : ** 来表示表格的具体格式，例如居中，居左或居右，在默认情况下居左</td>
+<td></td>
+</tr>
+<tr>
+<td><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#表格左     居中     右</span><br><span class="line">|  left |center | right |</span><br><span class="line">|:------|:-----:|------:|</span><br><span class="line">|content|content|content|</span><br></pre></td></tr></table></figure></td>
+<td></td>
+</tr>
+<tr>
+<td>left</td>
+<td>center</td>
+</tr>
+<tr>
+<td>:——</td>
+<td>:—–:</td>
+</tr>
+<tr>
+<td>content</td>
+<td>content</td>
+</tr>
+</tbody></table>
+<h2 id="markdown图片及链接插入"><a href="#markdown图片及链接插入" class="headerlink" title="markdown图片及链接插入"></a>markdown图片及链接插入</h2><p>运用markdown语法可以在图片中插入图片以及超链接，插入图片可以是本地图片，亦可以是图床链接，本地图片经常出错，没试出来，不过url倒是可以完美支持</p>
+<h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p>markdown插入图片，在[]中输入图片的详细描述，()中插入图片位置或是url链接<br>据说可以用base64解码图片显示，没试过，之后等详细看看再记入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![图片描述](&#x2F;filename&#x2F;images&#x2F;demo.jpg)</span><br><span class="line">![图片描述](http:&#x2F;&#x2F;whats.the.picture.xyz)</span><br></pre></td></tr></table></figure>
+<p>在图片地址过长，影响文章段落时，图片的地址可以用一个变量来承接一下，例如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">！[图片描述](picture1)</span><br><span class="line">[picture1]: http:&#x2F;&#x2F;whats.the.picture.xyz</span><br></pre></td></tr></table></figure>
+<p>比如我在某图床上上传的图片url地址为<a href="http://s1.ax1x.com/2020/07/18/UcusPI.jpg" target="_blank" rel="noopener">http://s1.ax1x.com/2020/07/18/UcusPI.jpg</a><br>输入如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![banner](http:&#x2F;&#x2F;s1.ax1x.com&#x2F;2020&#x2F;07&#x2F;18&#x2F;UcusPI.jpg)</span><br></pre></td></tr></table></figure>
+<p>结果如下<br><img src="http://s1.ax1x.com/2020/07/18/UcusPI.jpg" alt="banner"></p>
+<h4 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h4><p>给文字加上超链接，使得在点击文字直接可以访问到相关网页，语法如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[github](http:&#x2F;&#x2F;github.com)</span><br></pre></td></tr></table></figure>
+<p>实例，点击 github 即可进入到网页</p>
+<blockquote>
+<h5 id="github"><a href="#github" class="headerlink" title="github"></a><a href="http://github.com" target="_blank" rel="noopener">github</a></h5><p>GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub</p>
+</blockquote>
+<h2 id="注意项"><a href="#注意项" class="headerlink" title="注意项"></a>注意项</h2><p>当出现文字中含有特殊符号与语法重叠时，就无法正常输入，这是只需要输入反斜杠开头即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\_config.yml</span><br></pre></td></tr></table></figure>
+<p>输出结果为  _config.yml</p>
+<h2 id="markdown甘特图绘制方法"><a href="#markdown甘特图绘制方法" class="headerlink" title="markdown甘特图绘制方法"></a>markdown甘特图绘制方法</h2>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/markdown-%E7%AC%94%E8%AE%B0/" rel="tag"># -markdown -笔记</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/12/made-hexo/" rel="prev" title="制作hexo个人博客笔记">
+      <i class="fa fa-chevron-left"></i> 制作hexo个人博客笔记
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+        </div>
+        
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">DannyJO明</span>
+</div>
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>-->
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
